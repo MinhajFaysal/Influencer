@@ -1,10 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;900&display=swap');
 
-body{
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
+    text-decoration: none;
 }
 
 /* Top section start  */
@@ -57,9 +58,13 @@ body{
 
     .start-journey-area{
         display: flex;
+        width: 90%;
+        margin: 0 auto;
+        justify-content: space-between;
     }
 
     .content-area{
+        width: 30%;
         margin-top: 120px;
         margin-left: 120px;
         margin-right: 133px;
@@ -87,8 +92,8 @@ body{
         font-weight: 600;
         color:#E02C6D;
         padding:12px 18px;
-        border: 2px solid lightgrey;
-        border-radius: 25px;
+        border: 0.1rem solid lightgrey;
+        border-radius: 2rem;
         box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.10);
     }
 
@@ -102,10 +107,19 @@ body{
     .content-area .btn i{
         padding-left: 9px;
     }
+    .image-area{
+        width: 35%;
+        margin-right: 5%;
+    }
+    .image-area .image{
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-position: center;
+        background-image: url(images/Circle\ design.svg);
+    }
 
     .image-area img{
-        width: 440px;
-        height: 414px;
+        width: 100%;
         margin-top: 70px;
         margin-right: 165px;
         margin-bottom: 100px;
@@ -117,16 +131,18 @@ body{
         display: flex;
         align-items: center;
         justify-content: center;
-        border: 1px solid #AAAAAA;
-    }
-
-    .ecommerce-section a{
-        padding: 20px 35px;
+        gap: 3rem;
+        margin: 1rem auto;
+        padding: 1.5rem;
+        border: 2.5px solid;
+        border-image-slice: 1;
+        border-image-source: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0));
     }
 
     /* Packages area start  */
     .container-2{
-        padding: 100px 20%;
+        margin: 2rem auto;
+        width: 90%;
     }
 
     .container-2 .section-heading{
@@ -139,16 +155,16 @@ body{
     .collections{
         display: grid;
         grid-template-columns: repeat(3,1fr);
-        grid-column-gap: 2rem;
-        grid-row-gap: 0.5rem;
+        gap: 1rem;
+        justify-content: center;
+        align-items: center;
     }
 
     .collection{
-        padding: 17px 15px 16px 15px;
+        padding: 1rem;
         cursor: pointer;
         box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
         border-radius: 6px;
-        margin-bottom: 20px;
     }
 
     .collection:hover{
@@ -209,6 +225,7 @@ body{
     .footer-container{
         background-color: #0A0826;
         text-align: center;
+        margin-top: 4rem;
     }
 
     .footer-content-area{
@@ -216,6 +233,9 @@ body{
     }
 
     .footer-icon{
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
         padding-bottom: 40px;
         margin-top: 16px;
     }
@@ -236,7 +256,13 @@ body{
     }
 
     .footer-container .footer-icon a{
-        color: lightgray;
-        font-size: 30px;
-        margin-left: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: rgb(232, 243, 242);
+        font-size: 1.2rem;
+        height: 2rem;
+        width: 2rem;
+        border-radius: 50%;
+        background-color:#d9dbe11c;
     }
